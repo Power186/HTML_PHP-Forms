@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="basic.css">
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <p>PHP scripts in HTML Forms</p>
+    <hr>
+    <form method="POST" action="data.php">
+        <p>
+            First Name:<br />
+            <input type="text" name="firstname" size="30">
+        </p>
+        <p>
+            Position:<br />
+            <select name="position" size="1">
+                <option value="Administrator">Administrator</option>
+                <option value="Faculty">Faculty</option>
+                <option value="Students">Students</option>
+            </select>
+        </p>
+        <p>
+            Degrees:
+            <br /><input type="checkbox" name="BA" value="BA"> BA 
+            <br /><input type="checkbox" name="BS" value="BS"> BS 
+            <br /><input type="checkbox" name="MS" value="MS"> MS 
+            <br /><input type="checkbox" name="PhD" value="PhD"> PhD 
+        </p>
+        <p>
+            Comments:<br />
+            <textarea name="comments" rows="5" cols="25"></textarea>
+        </p>
+        <p>
+            Enrollment/Employee Type:
+            <input type="radio" name="etype" value="Full-time" checked="checked"> Full-time
+            <input type="radio" name="etype" value="Part-time"> Part-time
+        </p>
+        <p>
+            <input type="submit" value="Submit Information">
+        </p>
+    </form>
+</body>
+</html>
